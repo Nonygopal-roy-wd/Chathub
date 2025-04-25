@@ -21,18 +21,28 @@
       user-select: none;
       width: 100%;
     }
-    
-    h2 {
-      color: #fff;
+    .hdr{
       position: sticky;
       top: 0;
+      z-index: 9999;
+      background: #000;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    h2 {
+      color: #fff;
       z-index: 999;
       background: #000;
       font-size: 6vw;
       padding: 5px;
       padding-left: 5%;
     }
-    
+    .vdo{
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+    }
     #username {
       color: #fff;
       z-index: 989;
@@ -144,7 +154,7 @@
 </head>
 
 <body oncontextmenu="return false">
-  <h2>Chathub</h2>
+ <div class="hdr"><h2>Chathub</h2><h2><a href="c.html" class="vdo">📹</a></h2></div>
   <input type="text" id="username" placeholder="Enter your name"><br>
   
   <div id="chat-box">
